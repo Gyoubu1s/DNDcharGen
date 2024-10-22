@@ -47,21 +47,21 @@ print(f'Your character background is: {char_background}')
 #next stage is race/species
 subraces = {
     'Dwarf': ('Hill Dwarf' , 'Mountain Dwarf'),
-    "Elf": ('High Elf' , 'Wood Elf' , 'Eladrin Elf'),
-    "Halfling": ('Lightfoot Halfling' , 'Stout Halfling'),
-    "Human": ('Human' , 'Variant Human'),    
+    'Elf': ('High Elf' , 'Wood Elf' , 'Eladrin Elf'),
+    'Halfling': ('Lightfoot Halfling' , 'Stout Halfling'),
+    'Human': ('Human' , 'Variant Human'),    
 }
 
 race_options = (
-    'Dragonborn' ,
-    'Dwarf' ,
-    'Elf' ,
-    'Half-Elf' ,
-    'Half-Orc' ,
-    'Halfling' ,
-    'Human' ,
-    'Rock Gnome' ,
-    'Tiefling' ,
+    'Dragonborn',
+    'Dwarf',
+    'Elf',
+    'Half-Elf',
+    'Half-Orc',
+    'Halfling',
+    'Human',
+    'Rock Gnome',
+    'Tiefling',
     'Variant Aasimar',
 )
 
