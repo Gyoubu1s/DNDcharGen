@@ -73,39 +73,44 @@ if char_race in subraces:
 print(f'Your character\'s race is: {char_race}')
 
 #next stage is Ability Score
-
+#pointBuy implementation for Ability Score
 def generate_ability_score():
     while True:
-        char_str_pool = random.randint(0 , 7)
+        char_str_pool = random.randint(0 , 9)
         char_str = char_str_pool + 8
         ab_pts_pool = 27 - char_str_pool
 
-        char_dex_pool = random.randint(0 ,7)
+        char_dex_pool = random.randint(0 ,9)
         char_dex = char_dex_pool + 8
         ab_pts_pool -= char_dex_pool
 
-        char_con_pool = random.randint(0 , 7)
+        char_con_pool = random.randint(0 , 9)
         char_con = char_con_pool + 8
         ab_pts_pool -=  char_con
 
-        char_int_pool = random.randint(0 , 7)
+        char_int_pool = random.randint(0 , 9)
         char_int = char_int_pool + 8
         ab_pts_pool -= char_int_pool
 
-        char_wis_pool = random.randint(0 , 7)
+        char_wis_pool = random.randint(0 , 9)
         char_wis = char_wis_pool + 8
         ab_pts_pool -= char_wis_pool
 
-        char_cha_pool = random.randint(0 , 7)
+        char_cha_pool = random.randint(0 , 9)
         char_cha = char_cha_pool + 8
         ab_pts_pool -= char_cha_pool
 
-        if ab_pts_pool == 0:
+        if ab_pts_pool == -2:
             return(char_str , char_dex , char_con , char_int , char_wis , char_cha , ab_pts_pool)
 
 char_str, char_dex, char_con, char_int, char_wis, char_cha, ab_pts_pool = generate_ability_score()
 
-print(f'Strength: {char_str}, Dexterity: {char_dex}, Constitution: {char_con}, Intelligence: {char_int}, Wisdom: {char_wis}, Charisma: {char_cha}')
+print(f"""Strength: {char_str}
+Dexterity: {char_dex}
+Constitution: {char_con}
+Intelligence: {char_int}
+Wisdom: {char_wis}
+Charisma: {char_cha}""")
 print(f"Remaining Ability Points: {ab_pts_pool}")
 
 #next stage is starting equipment
