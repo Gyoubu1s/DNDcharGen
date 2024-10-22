@@ -8,13 +8,38 @@ print(f'Your character name is: {char_name}')
 
 #next stage is class selection
 
-class_options = ('Barbarian', 'Bard' , 'Cleric' , 'Druid' , 'Fighter' , 'Monk' , 'Paladin' , 'Ranger' , 'Rogue' , 'Sorceror' , 'Warlock' , 'Wizard')
+class_options = (
+    'Barbarian',
+    'Bard',
+    'Cleric',
+    'Druid',
+    'Fighter',
+    'Monk',
+    'Paladin',
+    'Ranger',
+    'Rogue',
+    'Sorceror',
+    'Warlock',
+    'Wizard',
+)
 char_class = random.choice(class_options)
 
 print(f'Your character class is: {char_class}')
 
 #next stage is background
-background_options = ('Acoyte' , 'Criminal' , 'Sage' , 'Soldier' , 'Haunted One' , 'Criminal/Spy' , 'Folk Hero' , 'Noble' , 'Sage' , 'Soldier')
+background_options = (
+    'Acoyte',
+    'Criminal',
+    'Sage',
+    'Soldier',
+    'Haunted One',
+    'Criminal/Spy',
+    'Folk Hero',
+    'Noble',
+    'Sage',
+    'Soldier',
+)
+
 char_background = random.choice(background_options)
 
 print(f'Your character background is: {char_background}')
