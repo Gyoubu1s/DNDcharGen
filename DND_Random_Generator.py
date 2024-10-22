@@ -45,21 +45,30 @@ char_background = random.choice(background_options)
 print(f'Your character background is: {char_background}')
 
 #next stage is race/species
-dwarf_race = ('Hill Dwarf' , 'Mountain Dwarf')
-elf_race = ('High Elf' , 'Wood Elf' , 'Eladrin Elf')
-halfling_race = ('Lightfoot Halfling' , 'Stout Halfling')
-human_race = ('Human' , 'Variant Human')
+subraces = {
+    'Dwarf': ('Hill Dwarf' , 'Mountain Dwarf'),
+    "Elf": ('High Elf' , 'Wood Elf' , 'Eladrin Elf'),
+    "Halfling": ('Lightfoot Halfling' , 'Stout Halfling'),
+    "Human": ('Human' , 'Variant Human'),    
+}
 
-race_options = ('Dragonborn' , 'Dwarf' , 'Elf' , 'Half-Elf' , 'Half-Orc' , 'Halfling' , 'Human' , 'Rock Gnome' , 'Tiefling' , 'Variant Aasimar')
+race_options = (
+    'Dragonborn' ,
+    'Dwarf' ,
+    'Elf' ,
+    'Half-Elf' ,
+    'Half-Orc' ,
+    'Halfling' ,
+    'Human' ,
+    'Rock Gnome' ,
+    'Tiefling' ,
+    'Variant Aasimar',
+)
+
 char_race = random.choice(race_options)
-if char_race == 'Dwarf':
-    char_race = random.choice(dwarf_race)
-elif char_race == 'Elf':
-    char_race = random.choice(elf_race)
-elif char_race == 'Halfling':
-    char_race = random.choice(halfling_race)
-elif char_race == 'Human':
-    char_race = random.choice(human_race)
+
+if char_race in subraces:
+    char_race = random.choice(subraces[char_race])    
 
 print(f'Your character\'s race is: {char_race}')
 
